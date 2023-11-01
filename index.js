@@ -20,17 +20,11 @@ for (i=0; i < order.length; i++){
     const flavor = order[i]
 //for each input, if statment is intitiated
     if (order[i] == `vanilla`){
-        //froyoFlavors.push(order)
-        orderFlavors.vanilla += 1
-        console.log(`vanilla+1`)}
+        orderFlavors.vanilla += 1}
     else if (order[i] == `strawberry`){
-        //froyoFlavors.push(order)
-        orderFlavors.strawberry += 1
-        console.log(`strawberry+1`)}
+        orderFlavors.strawberry += 1}
     else if (order[i] == `coffee`){
-        //froyoFlavors.push(order)
-        orderFlavors.coffee += 1
-        console.log(`coffee+1`)}
+        orderFlavors.coffee += 1}
     else{
         alert(`We don't have that flavor. Try again.`)
     }}
@@ -46,4 +40,5 @@ const orderForm = (message) =>{
     if (message){
         alert(`You have chosen ${message}.`)}
 }
-(orderForm(order));
+order = order.join(`, `);
+orderForm(order);
