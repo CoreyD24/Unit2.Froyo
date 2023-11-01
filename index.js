@@ -1,10 +1,3 @@
-//separate items with commas
-//prompt user for froyo flavors and store result
-//store result in array
-//build an object to track flavors
-//build loop to update object
-//use a function
-
 const orderFlavors = {
     vanilla: 0,
     strawberry: 0,
@@ -43,9 +36,6 @@ for (i=0; i < order.length; i++){
     }}
 
 //---------------------------------------------------------------------------------------
-//console.log(Object.keys(orderFlavors));
-//console.log(Object.values(orderFlavors));
-
 //displays updated list of ordered items versus line 17. Before and after
 for (const values in orderFlavors){
     console.log(orderFlavors);
